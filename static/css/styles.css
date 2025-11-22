@@ -1,0 +1,369 @@
+/* Основные стили */
+body {
+    background-color: #000000;
+    /* Черный фон, как в терминале */
+    color: #00FF00;
+    /* Зеленый текст, как в терминале */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    line-height: 1.5;
+}
+
+/* Навигация */
+.navbar {
+    background-color: #000000 !important;
+    /* Черный фон */
+}
+
+.navbar-brand,
+.nav-link {
+    color: #00FF00 !important;
+    /* Зеленый текст */
+}
+
+.nav-link:hover {
+    color: #FFFFFF !important;
+    /* Белый текст при наведении */
+    background-color: #00FF00;
+    /* Зеленый фон при наведении */
+}
+
+/* Основной контент */
+.container {
+    background-color: #000000;
+    /* Черный фон */
+    padding: 20px;
+    border: 1px solid #00FF00;
+    /* Зеленая граница */
+    margin-top: 20px;
+}
+
+/* Ссылки */
+a {
+    color: #00FF00;
+    /* Зеленый текст */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFFFFF;
+    /* Белый текст при наведении */
+    text-decoration: underline;
+}
+
+
+/* Заголовки */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #00FF00;
+    /* Зеленый текст */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+}
+
+
+/* Таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th,
+td {
+    border: 1px solid #00FF00;
+    /* Зеленая граница */
+    padding: 8px;
+    text-align: left;
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+th {
+    background-color: #000000;
+    /* Черный фон */
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+/* Код */
+code {
+    background-color: #000000;
+    /* Черный фон */
+    color: #00FF00;
+    /* Зеленый текст */
+    padding: 2px 4px;
+    border: 1px solid #00FF00;
+    /* Зеленая граница */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+}
+
+/* Стиль для карточек (Card) */
+.card {
+    background-color: #000000;
+    /* Черный фон */
+    border: 2px dashed #00FF00;
+    /* Пунктирная зеленая рамка */
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+.card-title {
+    margin-bottom: 10px;
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+.card-text {
+    line-height: 1.5;
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+.card-link {
+    color: #00FF00;
+    /* Зеленый текст */
+    text-decoration: none;
+}
+
+.card-link:hover {
+    color: #FFFFFF;
+    /* Белый текст при наведении */
+    text-decoration: underline;
+}
+
+
+
+
+/* Стиль для списка с маркерами в виде звездочек */
+section ul {
+    list-style-type: none;
+    /* Убираем стандартные маркеры */
+    padding-left: 20px;
+    /* Отступ для выравнивания текста */
+}
+
+section ul li {
+    position: relative;
+    /* Для позиционирования псевдоэлемента */
+    margin-bottom: 10px;
+    /* Отступ между пунктами списка */
+    color: #00FF00;
+    /* Зеленый текст */
+}
+
+section ul li::before {
+    content: "*";
+    /* Звездочка как маркер */
+    color: #00FF00;
+    /* Зеленый цвет звездочки */
+    font-size: 1.2em;
+    /* Размер звездочки */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: -15px;
+    /* Сдвигаем звездочку влево */
+    top: 0;
+    /* Выравниваем по вертикали */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Press Start 2P', cursive;
+    /* Пиксельный шрифт */
+    color: #00FF00;
+    /* Зеленый текст */
+    margin-bottom: 20px;
+    /* Отступ снизу */
+}
+
+h1 {
+    font-size: 1em;
+    /* Размер для h1 */
+}
+
+h2 {
+    font-size: 1em;
+    /* Размер для h2 */
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 1em;
+    /* Размер для h3 */
+}
+
+h4 {
+    font-size: 1em;
+    /* Размер для h4 */
+}
+
+h5 {
+    font-size: 1em;
+    /* Размер для h5 */
+}
+
+h6 {
+    font-family: 'Press Start 2P', cursive;
+    color: #00FF00;
+    font-size: 1em;
+}
+
+
+
+/* Стиль для формы */
+form {
+    background-color: #000000;
+    /* Черный фон */
+    padding: 20px;
+    border: 2px dashed #00FF00;
+    /* Пунктирная зеленая рамка */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    color: #00FF00;
+    /* Зеленый текст */
+    margin-bottom: 20px;
+    /* Отступ снизу */
+}
+
+/* Стиль для текстовых полей, текстовых областей и выпадающих списков */
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    /* Ширина на всю доступную область */
+    padding: 10px;
+    margin-bottom: 15px;
+    /* Отступ снизу */
+    background-color: #000000;
+    /* Черный фон */
+    border: 1px solid #00FF00;
+    /* Зеленая рамка */
+    color: #00FF00;
+    /* Зеленый текст */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    font-size: 1em;
+}
+
+/* Стиль для текстовых полей и текстовых областей при фокусе */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    /* Убираем стандартный контур */
+    border-color: #FFFFFF;
+    /* Белая рамка при фокусе */
+}
+
+/* Стиль для кнопок */
+button,
+input[type="submit"],
+input[type="reset"] {
+    background-color: #000000;
+    /* Черный фон */
+    color: #00FF00;
+    /* Зеленый текст */
+    border: 1px solid #00FF00;
+    /* Зеленая рамка */
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    font-size: 1em;
+    cursor: pointer;
+    margin-right: 10px;
+    /* Отступ справа */
+}
+
+/* Стиль для кнопок при наведении */
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #00FF00;
+    /* Зеленый фон */
+    color: #000000;
+    /* Черный текст */
+}
+
+/* Стиль для чекбоксов и радиокнопок */
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 10px;
+    /* Отступ справа */
+    accent-color: #00FF00;
+    /* Зеленый цвет для чекбоксов и радиокнопок */
+}
+
+/* Стиль для меток (label) */
+label {
+    display: block;
+    /* Каждая метка на новой строке */
+    margin-bottom: 10px;
+    /* Отступ снизу */
+    color: #00FF00;
+    /* Зеленый текст */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+}
+
+/* Стиль для групп полей (fieldset) */
+fieldset {
+    border: 1px solid #00FF00;
+    /* Зеленая рамка */
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Отступ снизу */
+}
+
+legend {
+    color: #00FF00;
+    /* Зеленый текст */
+    font-family: 'Courier New', Courier, monospace;
+    /* Моноширинный шрифт */
+    padding: 0 10px;
+    /* Отступы для легенды */
+}
+
+  .window {
+    color: #00FF00;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto; /* или фиксированную ширину, например 400px 100% */
+    max-width: 90%;
+    
+    border: 1px solid #00FF00; 
+    display:none; 
+    bottom: 0; 
+    background: #000000; 
+    padding: 15px; 
+    text-align: center; 
+    vertical-align: center;
+    z-index: 1000;
+  }
+
+  .button {
+    margin-left: 15px; 
+    padding: 5px 10px; 
+    cursor: pointer;
+  }

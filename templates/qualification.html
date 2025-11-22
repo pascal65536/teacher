@@ -1,0 +1,60 @@
+<h2>Курс профессиональной переподготовки</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    {% for card in professional_list %}
+    <div class="col">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename=card.images) }}" class="card-img-top" alt="Удостоверение 1">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{card.name}}</h5>
+                {% if card.pk %}<p class="card-text">{{card.pk}}</p>{% endif %}                    
+                {% if card.reg %}<p class="card-text">Регистрационный номер: {{card.reg}}</p>{% endif %}                    
+                {% if card.hours %}<p class="card-text">Длительность: {{card.hours}}</p>{% endif %}    
+                {% if card.description %}<p class="card-text">{{card.description}}</p>{% endif %}    
+                {% if card.org %}<p class="card-text">{{card.org}}</p>{% endif %}    
+                {% if card.dates %}<p class="card-text">В период: {{card.dates}}</p>{% endif %}    
+                {% if card.city %}<p class="card-text">Город: {{card.city}}</p>{% endif %}    
+                {% if card.year %}<p class="card-text">Год: {{card.year}}</p>{% endif %}    
+            </div>
+        </div>
+    </div>        
+    {% endfor %}
+</div>
+
+<h2>Курсы повышения квалификации</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    {% for card in qualification_list %}
+    <div class="col">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename=card.images) }}" class="card-img-top" alt="Удостоверение 1">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{card.name}}</h5>
+                {% if card.pk %}<p class="card-text">{{card.pk}}</p>{% endif %}                    
+                {% if card.reg %}<p class="card-text">Регистрационный номер: {{card.reg}}</p>{% endif %}                    
+                <p class="card-text">Длительность: {{card.hours}}</p>
+                <p class="card-text">{{card.org}}</p>
+                <p class="card-text">В период: {{card.dates}}</p>
+                <p class="card-text">Город: {{card.city}}</p>
+                <p class="card-text">Год: {{card.year}}</p>
+            </div>
+        </div>
+    </div>        
+    {% endfor %}
+</div>
+
+<h2>Благодарственные письма и сертификаты</h2>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+    {% for card in sertificates_list %}
+    <div class="col">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename=card.images) }}" class="card-img-top" alt="Удостоверение 1">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{card.name}}</h5>
+                {% if card.description %}<p class="card-text">{{card.description}}</p>{% endif %}                    
+                <p class="card-text">{{card.org}}</p>
+                <p class="card-text">Город: {{card.city}}</p>
+                {% if card.year %}<p class="card-text">Дата: {{card.year}}</p>{% endif %}                    
+            </div>
+        </div>
+    </div>        
+    {% endfor %}
+</div>    

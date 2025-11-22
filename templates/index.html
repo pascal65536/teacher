@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Обо мне -->
+<section id="about">
+    <h2>Обо мне</h2>
+    <p>
+        Добрый день. Меня зовут Сергей Пахтусов. Я работаю педагогом дополнительного образования в муниципальном бюджетном общеобразовательном учреждении Курагинской СОШ №3 с 2016 года. Осуществляю образовательную деятельность в соответствии с образовательной программой дополнительного образования Курагинской СОШ№3 <a href="https://kuragino3.gosuslugi.ru/">kuragino3.gosuslugi.ru</a>
+    </p>
+    <p>
+        Целью моей профессиональной деятельности является создание условий для развития инженерного мышления и воспитание конкурентоспособной личности.
+    </p>
+    <p>
+        Моё педагогическое кредо: «Не мыслям надобно учить, а мыслить» (Иммануил Кант).
+    </p>
+</section>
+            
+<!-- Включаем раздел Повышение квалификации -->
+<section id="qualification">
+    {% include 'qualification.html' %}
+</section>
+
+<!-- Включаем раздел Образовательные курсы -->           
+<section id="courses">
+    {% include 'courses.html' %}
+</section>
+
+<!-- ЕГЭ по информатике -->
+<section id="ege">
+    <h2>ЕГЭ по информатике</h2>
+    <p>Мои разработки для подготовки к ЕГЭ:</p>
+    <ul>
+        <li><a target"_blank" href="https://infourok.ru/prezentaciya-po-informatike-na-temu-kodirovanie-i-dekodirovanie-dannyh-4-zadacha-ege-11-klass-6762234.html">04. Презентация на тему "Кодирование и декодирование данных"</a></li>
+        <li><a target"_blank" href="https://infourok.ru/prezentaciya-po-informatike-na-temu-algoritmy-szhatiya-informacii-11-klass-6762220.html">Презентация на тему "Алгоритмы сжатия информации"</a></li>
+        <!-- Добавь свои материалы -->
+        <li><a target"_blank" href="https://app.holst.so/invite/1e74177e-90c2-4308-8086-2d8da85c7c81">01. Анализ информационных моделей</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/ec4df234-f9ea-4075-a746-57311db16061">02. Составление таблицы истинности логической функции</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/9cf00c4f-bbae-415a-af01-354b877ae837">07. Кодирование</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/8ce83040-993f-41bd-866d-7b36fc814bd1">08. Кодирование, комбинаторика</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/564cbae0-1385-4eec-8e24-ec5f0942e463">11. Вычисление количества информации</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/57875090-38e0-4492-9230-ae7100bcfc93">14. Системы счисления</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/fbe381c9-5576-42b3-ac6e-e188c262d9a9">15. Анализ истинности логического выражения</a></li>
+        <!-- Добавь свои материалы -->
+        <li><a target"_blank" href="https://app.holst.so/invite/d62c7f0a-017d-4ec5-a212-7c093cb87f75">Модули Python, которые нужно взять с собой на ЕГЭ</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/4e20b942-73ca-46c0-9019-557cee92c01e">Типы данных в Python</a></li>
+        <li><a target"_blank" href="https://app.holst.so/invite/dc56d0df-c4cb-4914-8d39-bbf93156b8e4">Карточки методов</a></li>
+    </ul>
+</section>
+
+<!-- Мои ресурсы -->
+<section id="resources">
+    <h2>Мои ресурсы</h2>
+    <p>Ссылки на мои сайты, Telegram-каналы, соцсети и боты:</p>
+    <ul>
+        <li>
+            <a href="https://vk.com/pascal65536" target="_blank">ВКонтакте</a>
+        </li>
+        <li>
+            <a href="https://t.me/pascal65535">Телеграм-канал «Пахтусов пишет»</a>
+        </li>
+        <li>
+            <a href="https://t.me/mirmirov">Телеграм-канал «Параллельные миры»</a>
+        </li>
+        <li>
+            <a href="https://t.me/diy24">Телеграм-канал «DIY24»</a>
+        </li>
+        <li>
+            <a href="https://vk.com/pythonicprogramming">Подготовка к ЕГЭ по информатике с репетитором</a>
+        </li>
+        <li>
+            <a href="https://gitlab.com/pascal65536/">GitLab</a>
+        </li>
+        <li>
+            <a href="https://github.com/pascal65536">GitHub</a>
+        </li>
+        <li>
+            <a href="https://zen.yandex.ru/id/599fd4d54ffd130a0f4ca4f3">Дзен-канал «Пахтусов»</a>
+        </li>
+        <li>
+            <a href="https://scratch.mit.edu/studios/31467803">Студия «Программирование со здравым смыслом на Scratch»</a>
+        </li>
+        <li>
+            <a href="https://rutube.ru/plst/145924">Rutube-канал «Программирование со здравым смыслом»</a>
+        </li>
+        <li>
+            <a href="https://www.codewars.com/users/pascal65536">Моя страница на Codewars</a>
+        </li>
+    </ul>
+</section>
+
+<!-- Контакты -->
+<section id="contact">
+    <h2>Контакты</h2>
+    <p>Свяжитесь со мной:</p>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Имя</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Сообщение</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit">Отправить</button>
+    </form>
+</section>
+
+{% endblock %}
